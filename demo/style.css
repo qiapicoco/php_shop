@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+.ib {
+    display: inline-block;
+}
+.th0, .th1, .th2, .td0, .td1, .td2 {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.th0, .th1, .th2 {
+    text-align: center;
+    font-weight: bold;
+}
+.th0, .td0 {
+    width: 5em;
+}
+.th1, .td1 {
+    width: 11em;
+}
+th, td {
+    padding: 5px;
+}
+a {
+    padding-right: 10px;
+}
+
+/* 新增表单样式 */
+.customer-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.customer-form th, .customer-form td {
+    padding: 10px;
+    text-align: left;
+}
+
+.customer-form input[type="text"], .customer-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.customer-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-form input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .customer-form {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .customer-form th, .customer-form td {
+        display: block;
+        text-align: left;
+    }
+
+    .customer-form input[type="text"], .customer-form input[type="password"] {
+        width: 100%;
+    }
+}
+
+/* 图片样式 */
+.product-image {
+    width: 100px; /* 固定宽度 */
+    height: 100px; /* 固定高度 */
+    object-fit: cover; /* 自动裁切 */
+}
+
+/* 商品信息表格样式 */
+.product-table {
+    width: 100%;
+    max-width: 900px; /* 设置最大宽度，使其不会太宽 */
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; /* 水平居中 */
+}
+
+.product-table thead {
+    background-color: #f2f2f2;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-table th {
+    background-color: #0056b3;
+    color: white;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-table .td1 {
+    text-align: left;
+}
+
+/* 搜索表单样式 */
+.search-form {
+    max-width: 400px; /* 设置最大宽度 */
+    margin: 10px auto; /* 水平居中并设置上下外边距 */
+    padding: 20px;
+    background-color: #fff; /* 背景颜色 */
+    border: 1px solid #ddd; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.search-form input[type="text"] {
+    width: calc(100% - 100px); /* 输入框宽度，留出按钮的空间 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* 左侧圆角 */
+    box-sizing: border-box; /* 确保内边距和边框不增加元素的总宽度 */
+}
+
+
+.search-form input[type="submit"] {
+    width: 80px; /* 按钮宽度 */
+    padding: 10px;
+    background-color: #5b80a8; /* 按钮背景颜色 */
+    color: #fff; /* 文字颜色 */
+    border: none;
+    border-radius: 0 4px 4px 0; /* 右侧圆角 */
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    transition: background-color 0.3s ease; /* 平滑过渡效果 */
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #0056b3; /* 悬停时的背景颜色 */
+}
+
+/* 文件上传输入框样式 */
+.search-form input[type="file"] {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .search-form input[type="file"] {
+        width: 100%;
+    }
+}
